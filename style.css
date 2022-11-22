@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --main-background: hsl(217, 54%, 11%);
+    --card-background: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: var(--main-background);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container {
+    height: 587px;
+    width: 350px;
+    background-color: var(--card-background);
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;;
+    gap: 15px;
+    padding: 15px;
+}
+
+.images {
+    position: relative;
+}
+
+.equilibrium-image{
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.view{
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cyan);
+}
+
+h1 {
+    color: var(--white);
+}
+
+p {
+    color: var(--soft-blue);
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+}
+
+.data span{
+    margin-left: 8px;
+}
+
+.eth {
+    color: var(--cyan);
+    font-weight: bold;
+}
+
+.line {
+    border-bottom: 2px solid var(--line);
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.author img{
+    width: 15%;
+    border-radius: 50%;
+    border: 2px solid var(--line);
+}
+
+.author span{
+    color: var(--white);
+}
+
+footer p{
+    color: var(--white);
+}
+
+footer a{
+    color: var(--cyan);
+}
+
+.equilibrium-image:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+h1:hover, .author span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
